@@ -13,7 +13,7 @@ int main(int argc,char *argv[])
 	int fdold,fdnew;
 	if(argc != 3)
 	{
-		printf("[Error] Need 2 arguments for copy program\n");
+		printf("[ERROR] Need 2 arguments for copy program\n");
 		exit(1);
 	}
 
@@ -42,3 +42,8 @@ void copy(int fdold,int fdnew)
 	while((count = read(fdold, buffer, sizeof(buffer)))>0)
 		write(fdnew,buffer,count);
 }	
+
+//exit(1) -> stdlib.h
+//read/write -> unistd.h
+//open/creat ->fcntl.h
+
