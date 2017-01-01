@@ -1,3 +1,6 @@
+//Author : prakel
+//Date : 31/12/2017
+//Maurice J. Bach | page 9 | figure 1.3
 #include<stdio.h>
 #include<fcntl.h>
 #include<stdlib.h>
@@ -46,4 +49,8 @@ void copy(int fdold,int fdnew)
 //exit(1) -> stdlib.h
 //read/write -> unistd.h
 //open/creat ->fcntl.h
-
+/*
+chapter_1 $ ./file_copy_program a b
+[INF]fdold = 3
+[INF]fdnew = 4
+*/
